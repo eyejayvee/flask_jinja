@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head> 
+    <title>Flask Template Example</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+      div #main {
+        max-width: 500px;
+        padding: 20px;
+      }
+      nav .title {
+        font-weight: bold;
+      }
+      a .active{
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h2>This is part of my base template</h2>
+      <br>
+      {% block content %}{% endblock %}
+      <br>
+      <h2></h2>
+    </div>
+  </body>
+</html>
